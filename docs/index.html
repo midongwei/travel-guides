@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>云南13日自驾大环线攻略 · 7人家庭游</title>
+<style>
+:root{--c1:#185FA5;--c2:#0F6E56;--c3:#BA7517;--c4:#D85A30;--bg:#f5f5f5;--card:#fff;--text:#333;--muted:#888;--tag:#e8f4fd}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.7;max-width:480px;margin:0 auto;-webkit-text-size-adjust:100%}
+.cover{background:linear-gradient(135deg,#0C447C 0%,#185FA5 50%,#378ADD 100%);color:#fff;padding:40px 20px 30px;text-align:center;position:relative;overflow:hidden}
+.cover h1{font-size:22px;font-weight:700;margin-bottom:8px;letter-spacing:1px}
+.cover .sub{font-size:14px;opacity:.85;margin-bottom:16px}
+.cover .meta{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;font-size:13px;opacity:.8}
+.cover .meta span{background:rgba(255,255,255,.15);padding:4px 12px;border-radius:20px}
+.nav{display:flex;overflow-x:auto;padding:12px 16px;gap:8px;background:#fff;position:sticky;top:0;z-index:10;border-bottom:1px solid #eee;-webkit-overflow-scrolling:touch}
+.nav a{flex-shrink:0;font-size:13px;color:var(--muted);text-decoration:none;padding:6px 14px;border-radius:20px;background:#f0f0f0;white-space:nowrap}
+.nav a.active{background:var(--c1);color:#fff}
+.section{padding:16px}
+.section-title{font-size:17px;font-weight:700;color:var(--c1);margin-bottom:12px;padding-bottom:8px;border-bottom:2px solid var(--c1);display:flex;align-items:center;gap:6px}
+.section-title .icon{font-size:20px}
+.card{background:var(--card);border-radius:12px;padding:16px;margin-bottom:14px;box-shadow:0 1px 4px rgba(0,0,0,.06)}
+.card h3{font-size:16px;margin-bottom:8px;color:var(--c1)}
+.card h4{font-size:14px;margin:10px 0 6px;color:var(--c3)}
+.card p{font-size:14px;color:#555;margin-bottom:8px}
+.card .info-row{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0}
+.card .tag{display:inline-block;font-size:11px;padding:2px 10px;border-radius:12px;background:var(--tag);color:var(--c1)}
+.card .tag.warn{background:#fff3e0;color:var(--c3)}
+.card .tag.green{background:#e8f5e9;color:var(--c2)}
+.card .tag.red{background:#fce4ec;color:var(--c4)}
+.card img{width:100%;border-radius:8px;margin:8px 0;max-height:240px;object-fit:cover}
+.day-header{background:var(--c1);color:#fff;padding:10px 16px;border-radius:12px 12px 0 0;font-size:16px;font-weight:600}
+.day-card{background:var(--card);border-radius:0 0 12px 12px;margin-bottom:14px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.06)}
+.timeline{padding:12px 16px}
+.timeline-item{display:flex;gap:10px;padding:8px 0;border-bottom:1px solid #f0f0f0;align-items:flex-start}
+.timeline-item:last-child{border-bottom:none}
+.timeline-time{font-size:12px;color:var(--c1);font-weight:600;min-width:42px;padding-top:2px}
+.timeline-content{flex:1}
+.timeline-content .title{font-size:14px;font-weight:600;color:#333}
+.timeline-content .desc{font-size:12px;color:var(--muted);margin-top:2px}
+.hotel-card{border:1px solid #e8e8e8;border-radius:10px;overflow:hidden;margin-bottom:12px}
+.hotel-card img{width:100%;height:160px;object-fit:cover}
+.hotel-card .hotel-body{padding:12px}
+.hotel-card .hotel-name{font-size:15px;font-weight:600;color:#333}
+.hotel-card .hotel-info{font-size:12px;color:var(--muted);margin:4px 0}
+.hotel-card .hotel-price{font-size:18px;color:var(--c4);font-weight:700}
+.hotel-card .hotel-price small{font-size:12px;color:var(--muted);font-weight:400}
+.budget-table{width:100%;border-collapse:collapse;font-size:13px}
+.budget-table th,.budget-table td{padding:10px 8px;text-align:center;border-bottom:1px solid #eee}
+.budget-table th{background:var(--c1);color:#fff;font-weight:500}
+.budget-table tr:last-child td{font-weight:700;color:var(--c4);border-top:2px solid var(--c4);font-size:15px}
+.checklist{list-style:none}
+.checklist li{padding:6px 0;font-size:14px;border-bottom:1px dashed #eee;display:flex;align-items:center;gap:8px}
+.checklist li::before{content:"☐";font-size:16px;color:var(--c1)}
+.tips-box{background:#fff8e1;border-left:4px solid var(--c3);padding:12px 14px;border-radius:0 8px 8px 0;margin:8px 0;font-size:13px}
+.tips-box strong{color:var(--c3)}
+.map-svg{width:100%;max-height:300px;margin:0 auto;display:block}
+.footer{text-align:center;padding:20px;color:var(--muted);font-size:12px}
+.btn-link{display:block;text-align:center;background:var(--c1);color:#fff;padding:10px;border-radius:8px;text-decoration:none;font-size:14px;margin:8px 0;font-weight:600}
+.btn-link.alt{background:#fff;color:var(--c1);border:1px solid var(--c1)}
+.route-graph{background:var(--card);border-radius:12px;padding:16px;margin-bottom:14px}
+.route-graph .graph-line{font-family:monospace;font-size:12px;line-height:1.8;white-space:pre;overflow-x:auto;color:#555}
+.highlight{background:linear-gradient(180deg,transparent 60%,#fff3cd 60%);padding:0 2px}
+em{font-style:normal;color:var(--c4);font-weight:600}
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <h1>云南13日自驾大环线</h1>
+  <div class="sub">昆明 → 抚仙湖 → 大理 → 丽江 → 滇池</div>
+  <div class="meta">
+    <span>6月30日 - 7月12日</span>
+    <span>👨‍👩‍👧‍👦 7人 · 含2位老人</span>
+    <span>🚗 自驾约1200km</span>
+    <span>💰 人均约¥6,500</span>
+  </div>
+</div>
+
+<div class="nav" id="nav">
+  <a href="#weather">天气</a>
+  <a href="#route">路线</a>
+  <a href="#day1">Day1-3</a>
+  <a href="#day4">Day4-5</a>
+  <a href="#day6">Day6-9</a>
+  <a href="#day10">Day10-13</a>
+  <a href="#hotels">酒店</a>
+  <a href="#budget">预算</a>
+</div>
+
+<div class="section" id="weather">
+  <div class="section-title"><span class="icon">🌤️</span> 天气与穿搭</div>
+  <div class="card">
+    <p>6月底至7月是云南<strong>雨季</strong>，多为阵雨或夜雨，不影响白天游玩，是避暑好时节。</p>
+    <table style="width:100%;font-size:13px;border-collapse:collapse;margin-top:8px">
+      <tr style="background:#f7f7f7"><td style="padding:6px 8px"><strong>城市</strong></td><td style="padding:6px 8px"><strong>气温</strong></td><td style="padding:6px 8px"><strong>穿搭</strong></td></tr>
+      <tr><td style="padding:6px 8px">昆明</td><td style="padding:6px 8px">17–25°C</td><td style="padding:6px 8px">短袖+薄外套，雨具必备</td></tr>
+      <tr><td style="padding:6px 8px">抚仙湖</td><td style="padding:6px 8px">18–27°C</td><td style="padding:6px 8px">夏装+防晒衣</td></tr>
+      <tr><td style="padding:6px 8px">大理</td><td style="padding:6px 8px">16–25°C</td><td style="padding:6px 8px">长袖衬衫+薄外套，早晚凉</td></tr>
+      <tr><td style="padding:6px 8px">丽江</td><td style="padding:6px 8px">14–24°C</td><td style="padding:6px 8px">白天短袖，早晚需外套，雪山加冲锋衣</td></tr>
+    </table>
+    <div class="tips-box" style="margin-top:10px">
+      <strong>⚠️ 云南紫外线极强</strong>，阴天也一样！防晒霜SPF50+、帽子、墨镜必带。老人尤其注意。
+    </div>
+  </div>
+</div>
+
+<div class="section" id="route">
+  <div class="section-title"><span class="icon">🗺️</span> 路线总览</div>
+  <div class="card">
+    <svg viewBox="0 0 440 560" width="100%" preserveAspectRatio="xMidYMid meet">
+      <defs>
+        <marker id="arr-down" viewBox="0 0 10 10" refX="5" refY="8" markerWidth="6" markerHeight="6" orient="auto"><path d="M2 1L5 8L8 1" fill="#185FA5"/></marker>
+        <marker id="arr-up" viewBox="0 0 10 10" refX="5" refY="2" markerWidth="6" markerHeight="6" orient="auto"><path d="M2 9L5 2L8 9" fill="#0F6E56"/></marker>
+      </defs>
+      <text x="220" y="24" font-size="14" fill="#333" font-weight="700" text-anchor="middle">云南13日自驾大环线路线图</text>
+
+      <!-- 昆明 -->
+      <circle cx="60" cy="60" r="20" fill="#E6F1FB" stroke="#185FA5" stroke-width="2.5"/>
+      <text x="60" y="64" text-anchor="middle" font-size="13" fill="#185FA5" font-weight="700">昆</text>
+      <text x="95" y="57" font-size="13" fill="#185FA5" font-weight="700">昆明</text>
+      <text x="95" y="72" font-size="10" fill="#888">Day 1 抵达 · Day 12-13 滇池</text>
+
+      <!-- Line 昆明→抚仙湖 -->
+      <line x1="60" y1="80" x2="60" y2="120" stroke="#185FA5" stroke-width="2.5" marker-end="url(#arr-down)"/>
+      <rect x="70" y="94" width="38" height="16" rx="8" fill="#E6F1FB"/>
+      <text x="89" y="105" text-anchor="middle" font-size="9" fill="#185FA5" font-weight="600">65km</text>
+
+      <!-- 抚仙湖 -->
+      <circle cx="60" cy="142" r="16" fill="#E1F5EE" stroke="#0F6E56" stroke-width="2.5"/>
+      <text x="60" y="146" text-anchor="middle" font-size="12" fill="#0F6E56" font-weight="700">湖</text>
+      <text x="95" y="139" font-size="13" fill="#0F6E56" font-weight="700">抚仙湖</text>
+      <text x="95" y="154" font-size="10" fill="#888">Day 2 · 琉璃万顷</text>
+
+      <!-- Line 抚仙湖→大理 -->
+      <line x1="60" y1="158" x2="60" y2="218" stroke="#185FA5" stroke-width="2.5" marker-end="url(#arr-down)"/>
+      <rect x="70" y="182" width="44" height="16" rx="8" fill="#E6F1FB"/>
+      <text x="92" y="193" text-anchor="middle" font-size="9" fill="#185FA5" font-weight="600">380km</text>
+
+      <!-- 大理 -->
+      <circle cx="60" cy="242" r="20" fill="#FAEEDA" stroke="#BA7517" stroke-width="2.5"/>
+      <text x="60" y="246" text-anchor="middle" font-size="13" fill="#BA7517" font-weight="700">理</text>
+      <text x="95" y="239" font-size="13" fill="#BA7517" font-weight="700">大理</text>
+      <text x="95" y="254" font-size="10" fill="#888">Day 3-5 游玩 · Day 10 返程休整</text>
+
+      <!-- Line 大理→丽江 -->
+      <line x1="60" y1="262" x2="60" y2="322" stroke="#185FA5" stroke-width="2.5" marker-end="url(#arr-down)"/>
+      <rect x="70" y="286" width="44" height="16" rx="8" fill="#E6F1FB"/>
+      <text x="92" y="297" text-anchor="middle" font-size="9" fill="#185FA5" font-weight="600">190km</text>
+
+      <!-- 丽江 -->
+      <circle cx="60" cy="346" r="20" fill="#FAECE7" stroke="#D85A30" stroke-width="2.5"/>
+      <text x="60" y="350" text-anchor="middle" font-size="13" fill="#D85A30" font-weight="700">丽</text>
+      <text x="95" y="343" font-size="13" fill="#D85A30" font-weight="700">丽江</text>
+      <text x="95" y="358" font-size="10" fill="#888">Day 6-9 · 雪山古城慢时光</text>
+
+      <!-- 返程虚线 丽江→大理 -->
+      <line x1="76" y1="346" x2="76" y2="262" stroke="#0F6E56" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#arr-up)"/>
+      <text x="85" y="308" font-size="9" fill="#0F6E56" font-weight="600">返</text>
+
+      <!-- 返程虚线 大理→昆明 -->
+      <line x1="76" y1="242" x2="76" y2="80" stroke="#0F6E56" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#arr-up)"/>
+      <text x="85" y="165" font-size="9" fill="#0F6E56" font-weight="600">返</text>
+
+      <!-- Legend -->
+      <rect x="195" y="400" width="220" height="75" rx="8" fill="#fff" stroke="#eee" stroke-width="1"/>
+      <line x1="210" y1="418" x2="250" y2="418" stroke="#185FA5" stroke-width="2.5"/>
+      <text x="260" y="422" font-size="11" fill="#333">去程（直达）</text>
+      <line x1="210" y1="440" x2="250" y2="440" stroke="#0F6E56" stroke-width="2" stroke-dasharray="6,4"/>
+      <text x="260" y="444" font-size="11" fill="#333">返程（大理中场休息）</text>
+      <text x="210" y="466" font-size="10" fill="#888">全程约 1250km · 纯驾驶约 18h</text>
+
+      <!-- Summary box -->
+      <rect x="32" y="392" width="148" height="85" rx="10" fill="#F8FBFF" stroke="#185FA5" stroke-width="1" stroke-dasharray="4,2"/>
+      <text x="106" y="414" text-anchor="middle" font-size="12" fill="#185FA5" font-weight="700">总行程一览</text>
+      <text x="106" y="434" text-anchor="middle" font-size="10" fill="#555">13天 · 4座城</text>
+      <text x="106" y="452" text-anchor="middle" font-size="10" fill="#555">自驾 1250km</text>
+      <text x="106" y="470" text-anchor="middle" font-size="10" fill="#555">7人 · 含2位老人</text>
+
+      <!-- Timeline band -->
+      <rect x="32" y="490" width="376" height="55" rx="10" fill="#F5F5F5"/>
+      <text x="220" y="508" text-anchor="middle" font-size="10" fill="#888">6/30 ─── 7/1 ─── 7/2-5 ─── 7/6-9 ─── 7/10 ─── 7/11-12 ─── 7/12</text>
+      <text x="220" y="528" text-anchor="middle" font-size="11" fill="#555">昆明 → 抚仙湖 → 大理 → 丽江 → 大理→ 昆明·滇池 → ✈回家</text>
+    </svg>
+  </div>
+
+  <div class="card">
+    <h3>🚗 车辆 & 自驾须知</h3>
+    <p><span class="tag green">已解决</span> 车已在携程租好。以下为自驾注意事项：</p>
+    <p>· 昆明→大理约380km/5h，<em>建议楚雄服务区休息</em></p>
+    <p>· 大理→丽江约190km/3h，大丽高速山路弯道多，<em>备好晕车药</em></p>
+    <p>· 丽江→昆明约500km，<em>不可一日开完</em>，已安排大理中途休整一晚</p>
+    <p>· 全程高速均支持ETC，服务区和城市加油站充足</p>
+  </div>
+</div>
+
+<!-- ====== DAY 1-3 ====== -->
+<div class="section" id="day1">
+  <div class="section-title"><span class="icon">📅</span> Day 1-3 · 昆明抵达 → 抚仙湖 → 大理</div>
+
+  <div class="day-card">
+    <div class="day-header">Day 1 · 6月30日 周一｜抵达昆明</div>
+    <div class="timeline">
+      <div class="timeline-item"><div class="timeline-time">全天</div><div class="timeline-content"><div class="title">✈️ 飞抵昆明长水机场</div><div class="desc">取行李后取车（已携程租好），驾车前往市区</div></div></div>
+      <div class="timeline-item"><div class="timeline-time">16:00</div><div class="timeline-content"><div class="title">🏨 入住南屏街希尔顿欢朋酒店</div><div class="desc">✅ 已定，市中心交通便利，老人休息调整</div></div></div>
+      <div class="timeline-item"><div class="timeline-time">17:30</div><div class="timeline-content"><div class="title">🚶 南屏步行街 + 金马碧鸡坊</div><div class="desc">昆明老地标，老人适合闲逛拍照，约1.5小时</div></div></div>
+      <div class="timeline-item"><div class="timeline-time">19:00</div><div class="timeline-content"><div class="title">🍜 晚餐 · 过桥米线</div><div class="desc">建新园/桥香园，人均¥30-50，正宗云南第一餐</div></div></div>
+    </div>
+  </div>
+
+  <div class="day-card">
+    <div class="day-header">Day 2 · 7月1日 周二｜昆明 → 抚仙湖</div>
+    <div class="timeline">
+      <div class="timeline-item"><div class="timeline-time">09:00</div><div class="timeline-content"><div class="title">🚗 驾车昆明 → 抚仙湖（65km/1.5h）</div><div class="desc">高速直达，路况好</div></div></div>
+      <div class="timeline-item"><div class="timeline-time">10:30</div><div class="timeline-content"><div class="title">🏨 入住「安吉拉的家」</div><div class="desc">✅ 已定，湖景民宿</div></div></div>
+      <div class="timeline-item"><div class="timeline-time">11:00</div><div class="timeline-content"><div class="title">🏖️ 月亮湾湿地公园</div><div class="desc">免费，沙滩+湖景，老人可散步拍照</div></div></div>
+      <div class="timeline-item"><div class="timeline-time">12:30</div><div class="timeline-content"><div class="title">🐟 午餐 · 湖边鱼庄</div><div class="desc">抚仙湖石锅鱼，人均¥60-80</div></div></div>
+      <div class="timeline-item"><div class="timeline-time">14:00</div><div class="timeline-content"><div class="title">😴 回民宿午休</div><div class="desc"><span class="tag warn">⭐ 老人午休很重要</span></div></div></div>
+      <div class="timeline-item"><div class="timeline-time">15:30</div><div class="timeline-content"><div class="title">🚶 时光栈道漫步</div><div class="desc">全长28km平缓临湖步道，走一段即可，距湖零距离</div></div></div>
+      <div class="timeline-item"><div class="timeline-time">17:30</div><div class="timeline-content"><div class="title">📷 网红S弯公路拍照</div><div class="desc">傍晚光线最美，随手拍大片</div></div></div>
+      <div class="timeline-item"><div class="timeline-time">18:30</div><div class="timeline-content"><div class="title">🌅 湖边看日落</div><div class="desc">抚仙湖日落绝美，别错过！</div></div></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>🏞️ 景点详解 · 抚仙湖</h3>
+    <img src="https://img.alicdn.com/imgextra/i1/O1CN01OIdhZB1mBZdBZ7xMR_!!0-alitrip.jpg" alt="抚仙湖">
+    <p>抚仙湖是中国最大的<strong>深水型淡水湖泊</strong>，平均深度90多米，湖水清澈见底，被古人称为"琉璃万顷"。蓄水量相当于<em>12个滇池、6个洱海</em>。水质为国家一类饮用水标准，是中国水质最好的天然湖泊之一。</p>
+    <div class="info-row">
+      <span class="tag">免费</span><span class="tag">1-1.5h车程</span><span class="tag green">老人友好</span>
+    </div>
+    <p style="margin-top:8px;font-size:13px;color:#888">📌 推荐游玩时间：全天，湖边散步+日落。月亮湾湿地公园免费开放，沙滩细腻，适合全家。</p>
+  </div>
+
+  <div class="day-card">
+    <div class="day-header">Day 3 · 7月2日 周三｜抚仙湖 → 大理（长途转场）</div>
+    <div class="timeline">
+      <div class="timeline-item"><div class="timeline-time">08:30</div><div class="timeline-content"><div class="title">🚗 驾车抚仙湖 → 大理</div><div class="desc">380km/4.5-5h，<span class="tag warn">长途驾驶日</span>，楚雄服务区休息</div></div></div>
+      <div class="timeline-item"><div class="timeline-time">11:30</div><div class="timeline-content"><div class="title">🍄 楚雄休息 + 野生菌午餐</div><div class="desc">7月正是菌子季！下高速吃野生菌火锅，人均¥80</div></div></div>
+      <div class="timeline-item"><div class="timeline-time">14:00</div><div class="timeline-content"><div class="title">🏨 抵达大理，入住客栈</div><div class="desc">建议住古城附近（见下方酒店推荐）</div></div></div>
+      <div class="timeline-item"><div class="timeline-time">15:00</div><div class="timeline-content"><div class="title">🏛️ 大理古城漫步</div><div class="desc">人民路、洋人街、五华楼，老人慢慢逛</div></div></div>
+      <div class="timeline-item"><div class="timeline-time">18:30</div><div class="timeline-content"><div class="title">🍲 晚餐 · 白族特色菜</div><div class="desc">砂锅鱼+乳扇，人均¥60-80</div></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ====== DAY 4-5 ====== -->
+<div class="section" id="day4">
+  <div class="section-title"><span class="icon">📅</span> Day 4-5 · 大理深度游</div>
+
+  <div class="day-card">
+    <div class="day-header">Day 4 · 7月3日 周四｜洱海环湖自驾</div>
+    <div class="timeline">
+      <div class="timeline-item"><div class="timeline-time">09:00</div><div class="timeline-content"><div class="title">🚗 环洱海自驾出发（顺时针）</div><div class="desc">全程约130km，走走停停</div></div></div>
+      <div class="timeline-item"><div class="timeline-time">09:30</div><div class="timeline-content"><div class="title">📷 磻溪村S弯</div><div class="desc">网红打卡点，清晨人少</div></div></div>
+      <div class="timeline-item"><div class="timeline-time">10:00</div><div class="timeline-content"><div class="title">🏘️ 喜洲古镇</div><div class="desc"><span class="tag green">老人推荐</span> 白族民居建筑群，严家大院，喜洲粑粑必吃</div></div></div>
+      <div class="timeline-item"><div class="timeline-time">12:30</div><div class="timeline-content"><div class="title">🥟 午餐 · 喜洲白族土八碗</div><div class="desc">人均¥50</div></div></div>
+      <div class="timeline-item"><div class="timeline-time">14:30</div><div class="timeline-content"><div class="title">🏖️ 双廊古镇</div><div class="desc"><span class="tag green">老人推荐</span> 洱海东岸最美小镇，远眺苍山十九峰，杨丽萍太阳宫</div></div></div>
+      <div class="timeline-item"><div class="timeline-time">17:00</div><div class="timeline-content"><div class="title">🌅 挖色镇看洱海日落</div><div class="desc">东岸看日落绝佳位置</div></div></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>🏞️ 景点详解 · 洱海</h3>
+    <img src="https://img.alicdn.com/tfscom/TB1z3qvfcLJ8KJjy0FnSuwFDpXa" alt="洱海">
+    <p>洱海是大理"风花雪月"四景之一——<strong>"洱海月"</strong>。位于苍山脚下，水色蔚蓝，以无敌的山水美景和湖滨独具风情的村镇闻名。东岸<strong>双廊</strong>可欣赏无敌湖景，阳光透过云层折射出"洱海神光"。</p>
+    <div class="info-row">
+      <span class="tag">免费（环湖）</span><span class="tag">全天开放</span><span class="tag green">老人友好</span><span class="tag">环湖130km</span>
+    </div>
+  </div>
+
+  <div class="day-card">
+    <div class="day-header">Day 5 · 7月4日 周五｜苍山三塔 + 古城深度</div>
+    <div class="timeline">
+      <div class="timeline-item"><div class="timeline-time">09:00</div><div class="timeline-content"><div class="title">🏯 崇圣寺三塔</div><div class="desc"><span class="tag green">大理地标</span> ¥75/人，老人半价，千年古迹</div></div></div>
+      <div class="timeline-item"><div class="timeline-time">11:00</div><div class="timeline-content"><div class="title">📷 三塔倒影公园</div><div class="desc">拍三塔倒影经典机位</div></div></div>
+      <div class="timeline-item"><div class="timeline-time">13:00</div><div class="timeline-content"><div class="title">😴 回客栈午休</div><div class="desc"><span class="tag warn">⭐ 老人午休</span></div></div></div>
+      <div class="timeline-item"><div class="timeline-time">14:30</div><div class="timeline-content"><div class="title">⛰️ 苍山感通索道（可选）</div><div class="desc">往返¥110/人，索道上山俯瞰洱海</div></div></div>
+      <div class="timeline-item"><div class="timeline-time">16:30</div><div class="timeline-content"><div class="title">🛍️ 古城人民路闲逛</div><div class="desc">文艺小店、手工艺品</div></div></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>🏯 景点详解 · 崇圣寺三塔</h3>
+    <img src="https://img.alicdn.com/imgextra/i3/6000000005448/O1CN013bnISq1q7EcKP75vm_!!6000000005448-0-fliggyimage.jpg" alt="崇圣寺三塔">
+    <p>始建于唐、宋（南诏、大理国）时期，距今<strong>一千多年</strong>历史。前一后二呈等腰三角形排列，大塔名"千寻塔"，南北小塔建于大理国时期。三塔倒影是<em>大理标志性画面</em>。</p>
+    <div class="info-row">
+      <span class="tag">¥75/人</span><span class="tag">5A景区</span><span class="tag">60+半价</span><span class="tag green">电瓶车¥20</span>
+    </div>
+    <p style="margin-top:8px;font-size:13px;color:#888">📌 建议早去避开人潮和午后雨。景区内平坦好走，有电瓶车，老人友好。开放时间7:30-18:30。</p>
+  </div>
+</div>
+
+<!-- ====== DAY 6-9 ====== -->
+<div class="section" id="day6">
+  <div class="section-title"><span class="icon">📅</span> Day 6-9 · 丽江深度游</div>
+
+  <div class="day-card">
+    <div class="day-header">Day 6 · 7月5日 周六｜大理 → 丽江</div>
+    <div class="timeline">
+      <div class="timeline-item"><div class="timeline-time">08:30</div><div class="timeline-content"><div class="title">🚗 驾车大理 → 丽江（190km/3h）</div><div class="desc"><span class="tag warn">山路弯道多</span>，备好晕车药，剑川服务区休息</div></div></div>
+      <div class="timeline-item"><div class="timeline-time">11:30</div><div class="timeline-content"><div class="title">🏨 抵达丽江，办理入住</div><div class="desc">建议住古城外围（方便停车）</div></div></div>
+      <div class="timeline-item"><div class="timeline-time">12:00</div><div class="timeline-content"><div class="title">🍲 午餐 · 腊排骨火锅</div><div class="desc">「阿妈腊排骨」，丽江招牌菜，人均¥55</div></div></div>
+      <div class="timeline-item"><div class="timeline-time">15:00</div><div class="timeline-content"><div class="title">🏛️ 丽江古城（大研古镇）</div><div class="desc">大水车→四方街→木府→狮子山万古楼，古城维护费¥50/人</div></div></div>
+      <div class="timeline-item"><div class="timeline-time">20:00</div><div class="timeline-content"><div class="title">🌃 古城夜景 + 四方街篝火晚会</div><div class="desc">老人可早回休息</div></div></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>🏛️ 景点详解 · 丽江古城</h3>
+    <img src="https://img.alicdn.com/tfscom/TB1b4nCFbH1gK0jSZFwSuw7aXXa" alt="丽江古城">
+    <p>丽江古城又名大研镇，<strong>世界文化遗产</strong>。古城内木楼青瓦，古街石巷，小桥流水，抬头即可遥望玉龙雪山。<em>木府</em>被称为"北方故宫"，徐霞客曾赞叹"宫室之丽，拟于王者"。</p>
+    <div class="info-row">
+      <span class="tag">古城维护费¥50/人</span><span class="tag">5A景区</span><span class="tag">木府¥40/人</span><span class="tag green">7日有效</span>
+    </div>
+  </div>
+
+  <div class="day-card">
+    <div class="day-header">Day 7 · 7月6日 周日｜玉龙雪山 · 老人A/B方案</div>
+    <div class="timeline">
+      <div class="timeline-item"><div class="timeline-time">06:30</div><div class="timeline-content"><div class="title">🌄 早出发前往玉龙雪山</div><div class="desc"><span class="tag warn">越早越好</span>，避开人流高峰</div></div></div>
+      <div class="timeline-item"><div class="timeline-time">08:00</div><div class="timeline-content"><div class="title">🎫 购票入园</div><div class="desc">进山费¥100/人，70+免票</div></div></div>
+      <div class="timeline-item"><div class="timeline-time">08:30</div><div class="timeline-content"><div class="title"><span class="tag red">分两队行动</span> 以下两种方案</div><div class="desc"></div></div></div>
+    </div>
+    <div style="padding:0 16px 12px">
+      <div class="tips-box">
+        <strong>方案A · 登顶组（体力好）</strong><br>
+        冰川大索道（¥172/人，需抢票）→ 冰川公园（海拔4506m）→ 4680石碑打卡<br>
+        ⚠️ 耗时3-4小时，<em>心脑血管疾病老人不建议</em>
+      </div>
+      <div class="tips-box" style="background:#e8f5e9;border-left-color:var(--c2)">
+        <strong style="color:var(--c2)">方案B · 老人轻松组（推荐）</strong><br>
+        云杉坪小索道（¥60/人）→ 云杉坪原始森林 → 蓝月谷<br>
+        ✅ 全程平缓好走，海拔约3000m，无高反风险<br>
+        ✅ 蓝月谷电瓶车¥50/人，老人建议坐
+      </div>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item"><div class="timeline-time">12:00</div><div class="timeline-content"><div class="title">👨‍👩‍👧‍👦 蓝月谷全员汇合</div><div class="desc"><span class="tag green">⭐ 必去</span> "小九寨"绝美宝石蓝水景</div></div></div>
+      <div class="timeline-item"><div class="timeline-time">15:30</div><div class="timeline-content"><div class="title">📷 甘海子草甸拍合影</div><div class="desc">远眺雪山全景</div></div></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>💎 景点详解 · 蓝月谷</h3>
+    <p>玉龙雪山融水形成的阶梯式湖泊群，水色蓝如宝石，被称为<strong>"小九寨"</strong>。全程约2km木栈道，平缓好走，<em>老人轻松无压力</em>。最佳拍照点：白水河、玉液湖、镜潭湖。</p>
+    <div class="info-row">
+      <span class="tag">免费（含进山费）</span><span class="tag">电瓶车¥50</span><span class="tag green">海拔3000m</span><span class="tag green">老人友好</span>
+    </div>
+    <div class="tips-box" style="margin-top:10px">
+      <strong>🎫 抢票攻略</strong>：冰川大索道票需提前在<em>"丽江旅游集团"小程序</em>抢票（提前1天20:00放票），旺季秒光，建议多人同时抢！
+    </div>
+  </div>
+
+  <div class="day-card">
+    <div class="day-header">Day 8 · 7月7日 周一｜束河 + 白沙古镇</div>
+    <div class="timeline">
+      <div class="timeline-item"><div class="timeline-time">09:30</div><div class="timeline-content"><div class="title">🏘️ 束河古镇</div><div class="desc"><span class="tag green">老人推荐</span> 比丽江安静，茶马古道原始风貌。九鼎龙潭→青龙桥→四方街→飞花触水</div></div></div>
+      <div class="timeline-item"><div class="timeline-time">12:30</div><div class="timeline-content"><div class="title">🍜 午餐 · 束河内</div><div class="desc">家常菜，人均¥50</div></div></div>
+      <div class="timeline-item"><div class="timeline-time">14:00</div><div class="timeline-content"><div class="title">🏚️ 白沙古镇</div><div class="desc"><span class="tag green">最原生态</span> 丽江最古老的纳西村落，白沙壁画¥30/人，牌楼远眺雪山</div></div></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>🏘️ 景点详解 · 束河古镇</h3>
+    <img src="https://img.alicdn.com/imgextra/i4/6000000007824/TB2uSinebuWBuNjSszgXXb8jVXa_!!0-alitrip.jpg" alt="束河古镇">
+    <p>束河古镇是当年<strong>茶马古道上的重要驿站</strong>，依山傍水，比大研古镇幽静古朴得多。四方街曾是马帮交易皮毛皮货的场所，九鼎龙潭是溪流的源头，潭水清澈见底，虹鳟鱼自由游弋。</p>
+    <div class="info-row">
+      <span class="tag">免费</span><span class="tag">4A景区</span><span class="tag green">安静人少</span><span class="tag green">老人友好</span>
+    </div>
+  </div>
+
+  <div class="day-card">
+    <div class="day-header">Day 9 · 7月8日 周二｜机动日 · 拉市海</div>
+    <div class="timeline">
+      <div class="timeline-item"><div class="timeline-time">09:30</div><div class="timeline-content"><div class="title">🦆 拉市海湿地公园</div><div class="desc">高原湿地，湖光山色秀美。可选骑马走茶马古道，¥150-200/人</div></div></div>
+      <div class="timeline-item"><div class="timeline-time">12:00</div><div class="timeline-content"><div class="title">🥘 午餐 · 农家乐</div><div class="desc">人均¥50</div></div></div>
+      <div class="timeline-item"><div class="timeline-time">14:00</div><div class="timeline-content"><div class="title">😴 午休</div><div class="desc"><span class="tag warn">⭐</span></div></div></div>
+      <div class="timeline-item"><div class="timeline-time">15:30</div><div class="timeline-content"><div class="title">🛒 忠义市场</div><div class="desc">当地人菜市场，纳西烤肉、鸡豆凉粉、丽江粑粑</div></div></div>
+      <div class="timeline-item"><div class="timeline-time">18:30</div><div class="timeline-content"><div class="title">🍖 晚餐 · 黑山羊火锅</div><div class="desc">「阿安黑山羊」，羊肉温补适合老人，人均¥70</div></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ====== DAY 10-13 ====== -->
+<div class="section" id="day10">
+  <div class="section-title"><span class="icon">📅</span> Day 10-13 · 返程昆滇池</div>
+
+  <div class="day-card">
+    <div class="day-header">Day 10 · 7月9日 周三｜丽江 → 大理（返程休整）</div>
+    <div class="timeline">
+      <div class="timeline-item"><div class="timeline-time">09:00</div><div class="timeline-content"><div class="title">🚗 驾车丽江 → 大理（190km/3h）</div><div class="desc">大丽高速，返程途经大理再住一晚</div></div></div>
+      <div class="timeline-item"><div class="timeline-time">12:30</div><div class="timeline-content"><div class="title">🏨 入住大理客栈</div><div class="desc">建议换住双廊区域（见下方酒店推荐），换角度体验洱海</div></div></div>
+      <div class="timeline-item"><div class="timeline-time">14:00</div><div class="timeline-content"><div class="title">😴 午休</div><div class="desc"><span class="tag warn">⭐ 避免500km/7h长途对老人的负担</span></div></div></div>
+      <div class="timeline-item"><div class="timeline-time">15:30</div><div class="timeline-content"><div class="title">☕ 洱海边喝茶发呆 / 补玩</div><div class="desc">轻松下午，不赶景点</div></div></div>
+    </div>
+  </div>
+
+  <div class="day-card">
+    <div class="day-header">Day 11 · 7月10日 周四｜大理 → 昆明</div>
+    <div class="timeline">
+      <div class="timeline-item"><div class="timeline-time">09:00</div><div class="timeline-content"><div class="title">🚗 驾车大理 → 昆明（380km/5h）</div><div class="desc">杭瑞高速，楚雄服务区休息</div></div></div>
+      <div class="timeline-item"><div class="timeline-time">14:00</div><div class="timeline-content"><div class="title">🏨 抵达昆明，入住酒店</div><div class="desc">建议滇池/翠湖附近</div></div></div>
+      <div class="timeline-item"><div class="timeline-time">16:00</div><div class="timeline-content"><div class="title">🏞️ 翠湖公园</div><div class="desc">免费，昆明人的后花园，适合老人散步</div></div></div>
+      <div class="timeline-item"><div class="timeline-time">18:00</div><div class="timeline-content"><div class="title">🍄 菌子火锅！</div><div class="desc"><span class="tag warn">⭐ 7月正季！</span> 一定要吃！菌彩/京川野菌王，人均¥80-100</div></div></div>
+    </div>
+  </div>
+
+  <div class="day-card">
+    <div class="day-header">Day 12 · 7月11日 周五｜昆明 · 滇池 + 西山</div>
+    <div class="timeline">
+      <div class="timeline-item"><div class="timeline-time">09:30</div><div class="timeline-content"><div class="title">🎡 海埂大坝</div><div class="desc"><span class="tag green">老人推荐</span> 滇池最佳观景地，2.8km平坦观光堤坝，免费</div></div></div>
+      <div class="timeline-item"><div class="timeline-time">10:30</div><div class="timeline-content"><div class="title">⛰️ 西山风景区</div><div class="desc">索道上山¥30 → 龙门石窟（¥40/人）→ 俯瞰五百里滇池</div></div></div>
+      <div class="timeline-item"><div class="timeline-time">14:00</div><div class="timeline-content"><div class="title">😴 午休</div><div class="desc"><span class="tag warn">⭐</span></div></div></div>
+      <div class="timeline-item"><div class="timeline-time">15:30</div><div class="timeline-content"><div class="title">🏘️ 云南民族村（可选）</div><div class="desc">¥90/人，老人¥45，25个少数民族村寨</div></div></div>
+      <div class="timeline-item"><div class="timeline-time">17:30</div><div class="timeline-content"><div class="title">🌅 滇池边看日落</div><div class="desc">完美的云南最后一晚</div></div></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>🏞️ 景点详解 · 滇池 & 西山</h3>
+    <img src="https://img.alicdn.com/imgextra/i2/6000000001797/O1CN017Edwh91P94YOWAVWw_!!6000000001797-0-fliggyimage.jpg" alt="海埂大坝">
+    <p><strong>滇池</strong>又称昆明湖，中国第六大淡水湖。湖面烟波浩渺，<strong>海埂大坝</strong>是滇池最佳观赏地，2.8km平坦堤坝，老人散步绝佳。对岸<strong>西山</strong>如睡美人横卧，登顶<strong>龙门</strong>可俯瞰整个滇池和昆明城。</p>
+    <div class="info-row">
+      <span class="tag">海埂大坝免费</span><span class="tag">西山¥40/人</span><span class="tag">索道¥30单程</span><span class="tag green">60+半价</span>
+    </div>
+  </div>
+
+  <div class="day-card">
+    <div class="day-header">Day 13 · 7月12日 周六｜昆明 → 飞回家 🛫</div>
+    <div class="timeline">
+      <div class="timeline-item"><div class="timeline-time">08:00</div><div class="timeline-content"><div class="title">🍳 酒店早餐，收拾行李</div><div class="desc"></div></div></div>
+      <div class="timeline-item"><div class="timeline-time">10:00</div><div class="timeline-content"><div class="title">🚗 驾车前往长水机场还车</div><div class="desc">约40分钟，预留充足时间</div></div></div>
+      <div class="timeline-item"><div class="timeline-time">12:00+</div><div class="timeline-content"><div class="title">✈️ 起飞回家</div><div class="desc">💡 航班晚的话，上午可去官渡古镇逛逛（免费，距机场近）</div></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ====== 酒店推荐 ====== -->
+<div class="section" id="hotels">
+  <div class="section-title"><span class="icon">🏨</span> 酒店推荐（基于飞猪实时数据）</div>
+
+  <h3 style="font-size:15px;margin:16px 0 8px;color:var(--c3)">📍 大理（7/2-7/4，3晚 + 7/9，1晚）</h3>
+
+  <div class="hotel-card">
+    <img src="https://img.alicdn.com/imgextra/i3/6000000000860/O1CN018LMno21IDvjFju7l7_!!6000000000860-0-hotel.jpg" alt="大理古城秘月">
+    <div class="hotel-body">
+      <div class="hotel-name">🏨 大理古城秘月·观景智能美宿（古城店）</div>
+      <div class="hotel-info">📍 大理古城南门 · 高档型 · 2023年装修</div>
+      <div class="hotel-price">¥3xx<small>/间/晚</small></div>
+      <p style="font-size:13px;color:#555">近大理古城，智能美宿，2023年新装修。适合第一天抵达，步行逛古城方便。</p>
+      <a class="btn-link" href="https://a.feizhu.com/0V135o" target="_blank">🔗 点击预订</a>
+    </div>
+  </div>
+
+  <div class="hotel-card">
+    <img src="https://img.alicdn.com/imgextra/i4/6000000004912/O1CN019sKvcD1m9kc1O0qio_!!6000000004912-2-hotel.png" alt="竹闲居">
+    <div class="hotel-body">
+      <div class="hotel-name">🏡 竹闲居·中式宋氏美学海景美宿（洱海小普陀店）</div>
+      <div class="hotel-info">📍 挖色镇 · 舒适型 · 2024年新装修 · 近小普陀</div>
+      <div class="hotel-price">¥1xx<small>/间/晚</small></div>
+      <p style="font-size:13px;color:#555">超高性价比海景民宿，近洱海东岸，能看到绝美落日山海，2024年新装修。</p>
+      <a class="btn-link" href="https://a.feizhu.com/0aacMF" target="_blank">🔗 点击预订</a>
+    </div>
+  </div>
+
+  <div class="hotel-card">
+    <img src="https://img.alicdn.com/imgextra/i3/6000000005294/O1CN01sfZMkE1oyhuaerv2Y_!!6000000005294-2-hotel.png" alt="Xirise云喜洲里">
+    <div class="hotel-body">
+      <div class="hotel-name">🏨 Xirise·云喜洲里｜Joyisle Mirage度假美宿</div>
+      <div class="hotel-info">📍 喜洲古镇 · 舒适型 · 2025年新装修</div>
+      <div class="hotel-price">¥7xx<small>/间/晚</small></div>
+      <p style="font-size:13px;color:#555">位于喜洲古镇内，白族民居风格设计美宿，品质较高，适合对住宿有要求的家庭。</p>
+      <a class="btn-link" href="https://a.feizhu.com/04ZSAs" target="_blank">🔗 点击预订</a>
+    </div>
+  </div>
+
+  <div class="tips-box" style="margin-top:12px">
+    <strong>💡 7/9返程途经大理推荐</strong>：换住双廊/挖色区域，换个角度体验洱海。推荐「竹闲居」（人均¥1xx）或「圣托公馆双廊亲水店」（人均¥2xxx，预算充足可选）。
+  </div>
+
+  <h3 style="font-size:15px;margin:16px 0 8px;color:var(--c4)">📍 丽江（7/5-7/8，4晚）</h3>
+
+  <div class="hotel-card">
+    <img src="https://img.alicdn.com/imgextra/i4/6000000002533/O1CN01stIWv81UaANWTeZpq_!!6000000002533-0-hotel.jpg" alt="栖巷记">
+    <div class="hotel-body">
+      <div class="hotel-name">🏡 栖巷记Cyan木语·观景美宿（丽江古城店）</div>
+      <div class="hotel-info">📍 古城南门附近 · 舒适型 · 2026年新装修</div>
+      <div class="hotel-price">¥1xx<small>/间/晚</small></div>
+      <p style="font-size:13px;color:#555">超高性价比！2026年刚装修，森系清新风格，近古城南门，方便停车。</p>
+      <a class="btn-link" href="https://a.feizhu.com/1AwQM0" target="_blank">🔗 点击预订</a>
+    </div>
+  </div>
+
+  <div class="hotel-card">
+    <img src="https://img.alicdn.com/imgextra/i3/6000000000111/O1CN01eWfWqr1Cgt6TiD6Sb_!!6000000000111-2-hotel.png" alt="轩林美宿">
+    <div class="hotel-body">
+      <div class="hotel-name">🏨 轩林美宿客栈（丽江古城店）</div>
+      <div class="hotel-info">📍 五一街 · 经济型 · 2026年5月新装修</div>
+      <div class="hotel-price">¥3xx<small>/间/晚</small></div>
+      <p style="font-size:13px;color:#555">2026年5月刚装修，位于古城五一街，步行即达四方街，闹中取静。</p>
+      <a class="btn-link" href="https://a.feizhu.com/3jv1yn" target="_blank">🔗 点击预订</a>
+    </div>
+  </div>
+
+  <div class="hotel-card">
+    <img src="https://img.alicdn.com/imgextra/i1/6000000001960/O1CN01mnq7uK1QLjQmHEWgY_!!6000000001960-0-hotel.jpg" alt="藏亭纳苑">
+    <div class="hotel-body">
+      <div class="hotel-name">🏡 藏亭纳苑Auspicious·雪山映月观景民宿</div>
+      <div class="hotel-info">📍 金山街道 · 经济型 · 2025年11月新装修 · 可观雪山</div>
+      <div class="hotel-price">¥2xx<small>/间/晚</small></div>
+      <p style="font-size:13px;color:#555">藏式艺术空间设计，可远眺玉龙雪山，安静舒适，适合喜欢安静的客人。</p>
+      <a class="btn-link" href="https://a.feizhu.com/1vTVM5" target="_blank">🔗 点击预订</a>
+    </div>
+  </div>
+
+  <h3 style="font-size:15px;margin:16px 0 8px;color:var(--c1)">📍 昆明（7/10-7/11，2晚）</h3>
+
+  <div class="hotel-card">
+    <img src="https://img.alicdn.com/imgextra/i2/6000000004249/O1CN01TwGxRx1hG5efnSHJy_!!6000000004249-0-hotel.jpg" alt="星程滇池">
+    <div class="hotel-body">
+      <div class="hotel-name">🏨 星程昆明滇池爱琴海酒店</div>
+      <div class="hotel-info">📍 西山区广福路 · 舒适型 · 2020年装修 · 近滇池</div>
+      <div class="hotel-price">¥3xx<small>/间/晚</small></div>
+      <p style="font-size:13px;color:#555">近滇池和爱琴海购物中心，位置优越，去海埂大坝开车约15分钟，连锁品牌品质稳定。</p>
+      <a class="btn-link" href="https://a.feizhu.com/06rbOa" target="_blank">🔗 点击预订</a>
+    </div>
+  </div>
+
+  <div class="hotel-card">
+    <img src="https://img.alicdn.com/imgextra/i2/6000000006544/O1CN01nOiddK1yDCwEvsJUt_!!6000000006544-0-hotel.jpg" alt="锦江都城">
+    <div class="hotel-body">
+      <div class="hotel-name">🏨 锦江都城酒店（昆明火车站龙湖旗舰店）</div>
+      <div class="hotel-info">📍 官渡区 · 舒适型 · 2025年8月新开业</div>
+      <div class="hotel-price">¥2xx<small>/间/晚</small></div>
+      <p style="font-size:13px;color:#555">锦江旗下品牌，2025年新开业，设施新，位置距机场和滇池均便利。</p>
+      <a class="btn-link" href="https://a.feizhu.com/3QWd65" target="_blank">🔗 点击预订</a>
+    </div>
+  </div>
+
+  <p style="font-size:12px;color:#888;margin-top:8px;text-align:center">以上酒店信息基于飞猪实时搜索结果，价格以实际预订为准。7人建议订3-4间房，老人住低楼层或带电梯楼层。</p>
+</div>
+
+<!-- ====== 预算 ====== -->
+<div class="section" id="budget">
+  <div class="section-title"><span class="icon">💰</span> 总预算拆解</div>
+  <div class="card">
+    <table class="budget-table">
+      <tr><th>类别</th><th>人均</th><th>7人合计</th><th>说明</th></tr>
+      <tr><td>住宿</td><td>¥2,800</td><td>¥19,600</td><td>12晚，3-4间房</td></tr>
+      <tr><td>餐饮</td><td>¥1,500</td><td>¥10,500</td><td>13天，日均¥115/人</td></tr>
+      <tr><td>租车+油+路</td><td>¥1,000</td><td>¥7,000</td><td>租车已携程定+油费过路费</td></tr>
+      <tr><td>门票+索道</td><td>¥700</td><td>¥4,900</td><td>含老人优惠</td></tr>
+      <tr><td>其他</td><td>¥500</td><td>¥3,500</td><td>停车/纪念品/骑马等</td></tr>
+      <tr><td><strong>总计</strong></td><td><strong>¥6,500</strong></td><td><strong>¥45,500</strong></td><td>不含机票</td></tr>
+    </table>
+    <p style="font-size:12px;color:#888;margin-top:8px">以上为参考预算，实际以消费为准。老人持身份证可在大部分景区享受半价或免票优惠。</p>
+  </div>
+</div>
+
+<!-- ====== 预约 & 避坑 ====== -->
+<div class="section">
+  <div class="section-title"><span class="icon">🚨</span> 必做预约清单</div>
+  <div class="card">
+    <ul class="checklist">
+      <li>玉龙雪山冰川大索道：「丽江旅游集团」小程序，提前1天20:00抢票</li>
+      <li>玉龙雪山老人人脸核验：入园前提前完成</li>
+      <li>大理住宿：旺季建议提前2周预订</li>
+      <li>丽江住宿：旺季建议提前2周预订</li>
+      <li>昆明还车：确认还车网点营业时间</li>
+    </ul>
+  </div>
+
+  <div class="section-title"><span class="icon">⚠️</span> 避坑提示</div>
+  <div class="card">
+    <div class="tips-box"><strong>雨季行车务必慢</strong>：7月云南多阵雨，山路湿滑，暴雨时靠边停车等雨小</div>
+    <div class="tips-box"><strong>晕车药必备</strong>：大理到丽江弯道多，老人坐后排靠窗看远方</div>
+    <div class="tips-box"><strong>拉市海骑马水很深</strong>：路边拉客的不要去，提前网上选正规马场</div>
+    <div class="tips-box"><strong>菌子火锅必须煮够时间</strong>：服务员会计时，未煮熟有毒，不能急着吃</div>
+    <div class="tips-box"><strong>古城停车</strong>：大理和丽江古城内禁止开车，提前查好外围停车场（¥10-20/次）</div>
+  </div>
+
+  <div class="section-title"><span class="icon">🎒</span> 行前物品清单</div>
+  <div class="card">
+    <h4>👴 老人专用</h4>
+    <ul class="checklist">
+      <li>常用药品（降压药、心脏药等），多备几天量</li>
+      <li>晕车药（大理→丽江山路必备）</li>
+      <li>防滑鞋（古城石板路湿滑）</li>
+      <li>帽子+墨镜（防晒）· 保温杯</li>
+      <li>身份证（景区优惠必备！60+半价，70+免票）</li>
+    </ul>
+    <h4>👨‍👩‍👧‍👦 全员通用</h4>
+    <ul class="checklist">
+      <li>防晒霜SPF50+ · 防晒衣 · 遮阳帽</li>
+      <li>雨伞/雨衣（雨季，每天带！）</li>
+      <li>冲锋衣/厚外套（雪山+早晚）</li>
+      <li>舒适运动鞋（别穿新鞋）</li>
+      <li>充电宝 · 创可贴 · 驱蚊液</li>
+      <li>身份证 · 驾驶证（租车用）</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ====== 路线图谱 ====== -->
+<div class="section">
+  <div class="section-title"><span class="icon">🌳</span> 行程知识图谱</div>
+  <div class="route-graph">
+    <div class="graph-line" style="font-family:monospace;font-size:11px;line-height:1.6;white-space:pre-wrap;color:#333">
+云南13日自驾大环线 · 7人含2位老人
+├── Day 1 · 昆明抵达 → 南屏街/金马碧鸡坊 → ¥450
+├── Day 2 · 昆明→抚仙湖 → 月亮湾/S弯/日落 → ¥780
+├── Day 3 · 抚仙湖→大理 → 长途转场+古城初探 → ¥2,500
+├── Day 4 · 大理洱海环湖 → 喜洲/双廊/小普陀 → ¥2,500
+├── Day 5 · 大理深度 → 三塔/苍山索道/古城 → ¥3,570
+├── Day 6 · 大理→丽江 → 古城/木府 → ¥3,000
+├── Day 7 · 玉龙雪山 → A/B方案/蓝月谷 → ¥4,150
+├── Day 8 · 丽江古镇 → 束河/白沙 → ¥2,530
+├── Day 9 · 丽江自由 → 拉市海/忠义市场 → ¥3,340
+├── Day 10 · 丽江→大理 → ⭐返程休整 → ¥2,350
+├── Day 11 · 大理→昆明 → 翠湖/菌子火锅 → ¥2,600
+├── Day 12 · 昆明滇池 → 海埂大坝/西山龙门 → ¥2,950
+└── Day 13 · 飞回家 → ¥250
+
+总预算：人均¥6,500 · 7人合计¥45,500（不含机票）</div>
+  </div>
+</div>
+
+<div class="footer">
+  <p style="font-size:14px;font-weight:600;color:var(--c1)">🏖️ 祝旅途愉快！一路平安，尽享彩云之南！</p>
+  <p style="margin-top:8px">以上信息基于公开资料及飞猪实时数据整理<br>实际票价、预约政策以各景区/平台官方发布为准<br>出行前请二次核实关键信息</p>
+  <p style="margin-top:12px;font-size:11px">📅 生成时间：2026年6月27日 · AI旅行管家 路小鲜（Leo）</p>
+</div>
+
+<script>
+const nav=document.getElementById('nav');
+const links=nav.querySelectorAll('a');
+window.addEventListener('scroll',()=>{
+  const scrollY=window.scrollY+60;
+  let current='';
+  links.forEach(a=>{
+    const id=a.getAttribute('href').substring(1);
+    const el=document.getElementById(id);
+    if(el&&el.offsetTop<=scrollY)current=id;
+    a.classList.remove('active');
+  });
+  if(current)nav.querySelector(`[href="#${current}"]`).classList.add('active');
+});
+links.forEach(a=>a.addEventListener('click',e=>{
+  e.preventDefault();
+  document.getElementById(a.getAttribute('href').substring(1)).scrollIntoView({behavior:'smooth'});
+}));
+</script>
+
+</body>
+</html>
